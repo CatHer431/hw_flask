@@ -1,13 +1,27 @@
-from flask import Flask, render_template
+from flask import Flask
 
-myapp_obj = Flask(__name__)
+ques1 = Flask(__name__)
 
-@myapp_obj.route("/")
-# called view function
+@ques1.route("/")
 def home():
- name = "Cathy"
+ name = 'Cathy'
  city_names = ["Paris", "London", "Rome", "Tahiti"]
- return render_template('home.html', name = name, city_names=city_names)
+ return f'''
+ <html>
+    <head>
+        <title>Low Pass Question</title>
+    </head>
+    <body>
+        <h1>Welcome {name}!</h1>
+        <a href="https://google.com">not google</a>
+        <ul>
+         <li>{city_names[0]}</li>
+	 <li>{city_names[1]}</li>
+	 <li>{city_names[2]}</li>
+	 <li>{city_names[3]}</li>
+        </ul>
+    </body>
+ </html>'''
 
-
-myapp_obj.run()
+#if __name__ == '__main__':
+ques1.run()
