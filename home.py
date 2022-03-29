@@ -10,10 +10,11 @@ global city_names
 def home():
  return '''
  <html>
- <head>
- </head>
-  <body>
-   <h1>Welcome """  + name + """ </h1>
+    <head>
+        <title>Low Pass Question</title>
+    </head>
+    <body>
+    <h1>Welcome """  + name + """ </h1>
     <a href="www.google.com">not google </a>
     <ul>
      {% for city in city_names %}
