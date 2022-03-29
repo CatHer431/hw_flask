@@ -24,4 +24,4 @@ def home():
  </html>'''
 
 #if __name__ == '__main__':
-ques1.run()
+#ques1.run()
