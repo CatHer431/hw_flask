@@ -22,7 +22,8 @@ def home():
      {% endfor %}
     </ul>
    </body>
- </html>""" 
+ </html>
+ ''' 
 
 
 
