@@ -2,12 +2,13 @@ from flask import Flask
 
 ques1 = Flask(__name__)
 
-global name
-global city_names
-#city_names = ["Paris", "London", "Rome", "Tahiti"]
+#global name
+#global city_names
 
 @ques1.route("/")
 def home():
+ name = 'Cathy'
+ city_names = ["Paris", "London", "Rome", "Tahiti"]
  return '''
  <html>
     <head>
