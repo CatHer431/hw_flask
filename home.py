@@ -2,11 +2,12 @@ from flask import Flask
 
 ques1 = Flask(__name__)
 
+name = 'Cathy'
+city_names = ["Paris", "London", "Rome", "Tahiti"]
+
 @ques1.route("/")
 def home():
- name = 'Cathy'
- city_names = ["Paris", "London", "Rome", "Tahiti"]
- return f'''
+ return '''
  <html>
     <head>
         <title>Low Pass Question</title>
